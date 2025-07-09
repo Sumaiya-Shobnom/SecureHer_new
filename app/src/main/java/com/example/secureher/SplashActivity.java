@@ -17,18 +17,18 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Make the activity full screen (hide status bar)
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        // Set the splash layout
+
         setContentView(R.layout.activity_splash);
 
-        // Wait 3 seconds, then go to MainActivity
+
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
-            finish(); // Close this activity so user can't come back
+            finish();
         }, SPLASH_TIME_OUT);
     }
 }
