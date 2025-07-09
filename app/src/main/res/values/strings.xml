@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SecureHer</string>
+    <string name="welcome_message">Welcome to SecureHer!</string>
+    <string name="splash_image_desc">Splash image</string>
+</resources>
