@@ -3,4 +3,5 @@
     <string name="app_name">SecureHer</string>
     <string name="welcome_message">Welcome to SecureHer!</string>
     <string name="splash_image_desc">Splash image</string>
+    <string name="welcome_to_secureher_mainactivity">Welcome to SecureHer MainActivity!</string>
 </resources>
