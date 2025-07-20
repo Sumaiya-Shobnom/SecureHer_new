@@ -1,0 +1,195 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- View Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#FFCDD2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onViewInfoClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Info"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Safety Tips -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#F8BBD0"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onSafetyTipsClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safety Tips"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Usage Guide -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#E1BEE7"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onUsageGuideClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage Guide"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- News Alerts -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#BBDEFB"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onNewsAlertsClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Alerts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Update Profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#C8E6C9"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onUpdateProfileClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Community -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#FFECB3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onCommunityClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Community"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Upload Contacts -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#B2EBF2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onUploadContactsClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Contacts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Police Numbers -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:background="#D7CCC8"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onAddPoliceNumbersClick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Police Numbers"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </GridLayout>
+</ScrollView>
+

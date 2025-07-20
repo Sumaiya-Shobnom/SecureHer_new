@@ -11,36 +11,60 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-
-        <!-- SplashActivity is the entry point -->
+        <activity
+            android:name=".ContactItem"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceNumbersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsAlertsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsageGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SafetyTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Other activities without launcher intent filters -->
         <activity
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".SignupActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
     </application>
 
 </manifest>
-

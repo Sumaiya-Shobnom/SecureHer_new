@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF8F0">
+
+    <!-- Contact Name Input -->
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Contact Name"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:textColorHint="#888888" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF" />
+
+    <!-- RecyclerView for showing the added contacts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"/>
+
+</LinearLayout>

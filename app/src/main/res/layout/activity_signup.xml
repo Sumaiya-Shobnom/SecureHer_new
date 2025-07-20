@@ -2,66 +2,59 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
-    android:background="#5e17eb">
+    android:padding="16dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/signupTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginBottom="24dp"
-            android:textColor="#ffffff" />
+            android:layout_gravity="center"
+            android:paddingBottom="24dp" />
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:padding="12dp"
             android:hint="Full Name"
             android:inputType="textPersonName"
+            android:padding="12dp"
             android:background="@android:drawable/edit_text" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:padding="12dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
             android:background="@android:drawable/edit_text" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:padding="12dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:layout_marginTop="12dp"
-            android:background="#ff8a00" />
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/edit_text" />
 
         <EditText
             android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:padding="12dp"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
             android:background="@android:drawable/edit_text" />
 
         <Button
@@ -70,15 +63,18 @@
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:layout_marginTop="24dp"
-            android:background="android:background="#ff8a00"/>
-
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
         <TextView
             android:id="@+id/loginRedirect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account? Login"
-            android:textColor="#ffffff"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center" />
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
 </ScrollView>
