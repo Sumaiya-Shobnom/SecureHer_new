@@ -24,20 +24,20 @@ public class UploadContactsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload_contacts);  // Your XML layout file name
+        setContentView(R.layout.activity_upload_contacts);
 
-        // Initialize UI elements
+
         nameInput = findViewById(R.id.nameInput);
         phoneInput = findViewById(R.id.phoneInput);
         addButton = findViewById(R.id.addButton);
         recyclerView = findViewById(R.id.recyclerView);
 
-        // Setup RecyclerView with adapter and layout manager
+
         contactItemAdapter = new ContactItem(contactList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(contactItemAdapter);
 
-        // Handle Add button click
+
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +51,6 @@ public class UploadContactsActivity extends AppCompatActivity {
                     contactList.add(newContact);
                     contactItemAdapter.notifyDataSetChanged();
 
-                    // Clear inputs
                     nameInput.setText("");
                     phoneInput.setText("");
                 }
