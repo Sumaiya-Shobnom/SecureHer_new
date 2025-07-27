@@ -11,10 +11,10 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard); // Make sure the XML file name matches this
+        setContentView(R.layout.activity_dashboard);
     }
 
-    // Click handler methods for each square box item
+
     public void onViewInfoClick(View view) {
         Intent intent = new Intent(this, ViewInfoActivity.class);
         startActivity(intent);
