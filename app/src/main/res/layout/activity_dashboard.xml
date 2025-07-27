@@ -1,195 +1,156 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8F0">
+    android:background="#ffffff"
+    tools:context=".DashboardActivity">
 
-    <GridLayout
-        android:id="@+id/gridLayout"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:padding="16dp"
-        android:alignmentMode="alignMargins"
-        android:rowOrderPreserved="false"
-        android:useDefaultMargins="true">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- View Info -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#FFCDD2"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onViewInfoClick">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/dashboardTitle"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:text="SecureHer"
+                android:textColor="#ff914d"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivProfileIcon"
+                android:layout_width="85dp"
+                android:layout_height="61dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:contentDescription="Profile Icon"
+                android:onClick="onProfileIconClick"
+                android:src="@drawable/profile" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+
+            <Button
+                android:id="@+id/btnViewInfo"
+                android:layout_width="30dp"
+                android:layout_height="131dp"
+                android:layout_columnWeight="1"
+                android:background="#00BFA6"
+                android:onClick="onViewInfoClick"
                 android:text="View Info"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-        <!-- Safety Tips -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#F8BBD0"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onSafetyTipsClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/btnSafetyTips"
+                android:layout_width="3dp"
+                android:layout_height="124dp"
+                android:layout_columnWeight="1"
+                android:background="	#8BC34A"
+                android:onClick="onSafetyTipsClick"
                 android:text="Safety Tips"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-        <!-- Usage Guide -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#E1BEE7"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onUsageGuideClick">
+            <Button
+                android:id="@+id/btnUsageGuide"
+                android:layout_width="120dp"
+                android:layout_height="134dp"
+                android:layout_columnWeight="1"
+                android:background="#00BCD4"
+                android:onClick="onUsageGuideClick"
+                android:text="App Guide"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Usage Guide"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+            <Button
+                android:id="@+id/btnNewsAlerts"
+                android:layout_width="138dp"
+                android:layout_height="134dp"
+                android:layout_columnWeight="1"
+                android:background="#ff5757"
+                android:onClick="onNewsAlertsClick"
+                android:text="News And Alerts"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-        <!-- News Alerts -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#BBDEFB"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onNewsAlertsClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="News Alerts"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
-
-        <!-- Update Profile -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#C8E6C9"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onUpdateProfileClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="140dp"
+                android:layout_height="149dp"
+                android:layout_columnWeight="1"
+                android:background="#673AB7"
+                android:onClick="onUpdateProfileClick"
                 android:text="Update Profile"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
 
-        <!-- Community -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#FFECB3"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onCommunityClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/btnCommunity"
+                android:layout_width="176dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:background="	#E91E63"
+                android:onClick="onCommunityClick"
                 android:text="Community"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-        <!-- Upload Contacts -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#B2EBF2"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onUploadContactsClick">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/btnUploadContacts"
+                android:layout_width="154dp"
+                android:layout_height="154dp"
+                android:layout_columnWeight="1"
+                android:background="#6cb6e6"
+                android:onClick="onUploadContactsClick"
                 android:text="Upload Contacts"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
 
-        <!-- Police Numbers -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:background="#D7CCC8"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_margin="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onAddPoliceNumbersClick">
-
-            <TextView
+            <Button
+                android:id="@+id/btnAddPoliceNumbers"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="148dp"
+                android:layout_columnWeight="1"
+                android:background="#FF9800"
+                android:onClick="onAddPoliceNumbersClick"
                 android:text="Police Numbers"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
-    </GridLayout>
+        </GridLayout>
+
+    </LinearLayout>
 </ScrollView>
-

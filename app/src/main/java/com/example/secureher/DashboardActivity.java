@@ -54,4 +54,8 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PoliceNumbersActivity.class);
         startActivity(intent);
     }
+    public void onProfileIconClick(View view) {
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
+    }
 }
